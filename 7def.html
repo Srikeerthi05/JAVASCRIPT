@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body> 
+    <script>
+       function converttoFahrenheit(celsius){
+        return (celsius*9/5)+32;
+       }
+       console.log(converttoFahrenheit(25));
+       function converttoCelsius(fahrenheit){
+        return (fahrenheit-32)*5/9;
+       }
+       console.log(converttoCelsius(86));
+       function convertTemperature(degrees, unit){
+        if(unit ==='C'){
+            const res=converttoFahrenheit(degrees);
+            return `${result}F`;
+        }else if(unit ==='F'){
+            const res=converttoCelsius(degrees);
+            return `${result}C`;
+        }
+       }
+
+       </script>
+       </body>
+</html>

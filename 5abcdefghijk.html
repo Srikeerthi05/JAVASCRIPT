@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <title>Buttons</title>
+    <style>
+         
+    </style>
+
+</head>
+<body>
+    <button onclick="
+        console.log(`Cart quantity: ${cartQuantity}`);">Show Quantity</button>
+        <button onclick="
+        cartQuantity++;
+        console.log(`Cart quantity: ${cartQuantity}`);">Add to Cart</button>
+     <button onclick="
+        cartQuantity+=cartQuantity+4;
+        console.log(`Cart quantity: ${cartQuantity}`);">+4</button>
+     <button onclick="
+        cartQuantity+=cartQuantity+5;
+        console.log(`Cart quantity: ${cartQuantity}`);"
+        >+5</button>  
+     <button onclick="
+         cartQuantity=cartQuantity-1;
+        console.log(`Cart quantity: ${cartQuantity}`);">Remove</button>
+     <button onclick="
+        cartQuantity=cartQuantity-2;
+        console.log(`Cart quantity: ${cartQuantity}`);">-2</button>
+     <button onclick="
+     cartQuantity=cartQuantity-3;
+     console.log(`Cart quantity: ${cartQuantity}`);">-3</button>
+
+
+    <script>
+        let cartQuantity=0;
+         let name='sri keerthi';
+         console.log(`My name is: ${name}`);
+         const cost=5+2*3+9;
+         console.log(`Cost of food: ${cost}`);
+         const tax=cost*0.1;
+         console.log(`Tax(10%): ${tax}`);
+         let total =cost+tax;
+         console.log(`Total cost: ${total}`);
+        </script>
+</body>
+</html>
