@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+                //2
+                function createGreeting(greeting){
+                    return function name(name){
+                        console.log(`${greeting}, ${name}`);
+                    }
+                }
+                const a=createGreeting("Hello");
+                console.log(a("World"));
+                const b= createGreeting("Hi");
+                console.log(b("Zayn"));
+
+                //3
+                function createSecretHolder(secret){
+                    return{
+                        getSecret: function(){
+                            return secret;
+                        },
+                        setSecret: function(newSecret){
+                            secret=newSecret;
+                        }
+                    }
+                }
+                const h= createSecretHolder(5);
+                console.log(h.getSecret());
+                h.setSecret(23);
+                console.log(h.getSecret());
+
+                //4
+                // secret is only accessed by getSecret and setSecret, outside code cannot access secret directly.
+                function createSecretHolder(secret){
+                    return{
+                        getSecret: function(){
+                            return secret;
+                        },
+                        setSecret: function(newSecret){
+                            secret=newSecret;
+                        }
+                    }
+                }
+                const sh= createSecretHolder(5);
+                console.log(sh.getSecret());
+                sh.setSecret(23);
+                console.log(sh.getSecret());
+                console.log(sh.secret);
+            </script>
+        </body>
+    </head>
+</html>
