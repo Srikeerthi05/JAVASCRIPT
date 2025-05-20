@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <title>Calculator</title>
+    <style>
+    </style>
+
+</head>
+<body>
+    <script>
+         const rand=Math.random();
+         let res;
+         if(rand<0.5){
+            console.log("heads");
+            res='heads';
+         }
+         else{
+            console.log("tails");
+            res='tails';
+         }
+
+         const guess='heads';
+         if(guess===res){
+            console.log('You win!');
+         }
+         else{
+            console.log('You lose!');
+         }
+ </script>
+</body>
+</html>
